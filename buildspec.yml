@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo installing dependencies...
+      - npm install
+  build:
+    commands:
+      - echo building...
+      # - npm run start
+artifacts: 
+  files:
+    - "**/*"
+  discard-paths: no
